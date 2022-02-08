@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Practice Web app</title>
+<script>
+function display()
+{
+	document.getElementById("displayName").innerHTML=  "Hello " + document.getElementById("getName").value +  " welcome to Febatech ";
+	localstorage.setItem("greetName",getName)
+	location.href="webapp3.html"
+	//window.open("webapp3.html","_blank")
+}
+</script>
+</head>
+<body>
+<h2 align="center"><br/><br/><br/><br/>
+<label for="nm">Name:</label>
+<input type="text" id="getName">
+<h2 align="center">
+<input type="submit" value="Greet" onclick="display()">
+<td><div id="displayName"></div></td>
+</h2>
+</h2>
+</body>
+</html>

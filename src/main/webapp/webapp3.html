@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2 align="center"></h2>
+<h3>id="setName"</h3>
+<script>
+window.onload=function(){
+	const getName=localstorage.getItem("greetName")
+document.getElementById("setName").innerHTML=getName;
+}
+</script>
+</body>
+</html>
